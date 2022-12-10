@@ -32,7 +32,9 @@ def send_mail():
     server.starttls()
     server.ehlo()
 
-    server.login('alex.karatistul@gmail.com', 'metkzjamfinwzxan')
+    # TODO
+    password = ''
+    server.login('alex.karatistul@gmail.com', password)
 
     subject = "Price fell down!"
     body = 'Check the Emag link https://www.emag.ro/telefon-mobil-samsung-galaxy-s22-ultra-dual-sim-256gb-12gb-ram-5g-phantom-black-sm-s908bzkgeue/pd/DQZ01FMBM/?X-Search-Id=66d0d07cba819e12ed11&X-Product-Id=9265669&X-Search-Page=1&X-Search-Position=0&X-Section=search&X-MB=0&X-Search-Action=view'
